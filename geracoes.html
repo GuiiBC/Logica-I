@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var media = 28;
+    var anoAtual = 2021;
+
+    var totalGeracoes = (anoAtual - 1500) / media;
+
+    mostra("O total de gerações após 1500 é " + Math.round(totalGeracoes) + ".");
+    pulaLinha();
+
+</script>
