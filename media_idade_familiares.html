@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var numeroIdades = parseInt(prompt("Digite o total de idades:"));
+	var somaIdades = 0;
+	var contador = 1;
+
+	while(contador <= numeroIdades) {
+		var idades = parseInt(prompt("Digite uma idade:"));
+		somaIdades = somaIdades + idades;
+		contador++;
+	}
+
+	var mediaIdades = somaIdades / numeroIdades;
+
+	mostra("A média das idades é: " + mediaIdades);
+
+</script>
